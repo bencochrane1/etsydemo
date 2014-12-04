@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 
 
 gem 'paperclip', '~> 4.2'
-
-
+gem "paperclip-dropbox", ">= 1.1.7"
+gem 'figaro'
 
 gem 'rails', '4.1.7'
 gem 'bootstrap-sass', '~> 3.3.1'
