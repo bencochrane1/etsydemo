@@ -77,5 +77,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #require for devise - remember to change locahost:3000 to actual application host
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'etsy-rails.herokuapp.com', port: 3000 }
 end
