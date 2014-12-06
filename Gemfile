@@ -8,6 +8,7 @@ gem "paperclip-dropbox", ">= 1.1.7"
 gem 'figaro'
 gem 'devise'
 gem 'stripe'
+gem 'jquery-turbolinks'
 
 gem 'rails', '4.1.7'
 gem 'bootstrap-sass', '~> 3.3.1'
