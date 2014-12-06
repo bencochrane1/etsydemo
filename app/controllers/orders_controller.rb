@@ -32,21 +32,21 @@ class OrdersController < ApplicationController
 
     begin
       charge = Stripe::Charge.create(
-          amount: (@listing.price * 100).floor,
-          currency: "AUD",
-          card: token
+        :amount => (@listing.price * 100).floor,
+        :currency => "usd",
+        :card => token
         )
       flash[:notice] = "Thanks for ordering!"
     rescue Stripe::CardError => e
       flash[:danger] = e.message
     end
-
+    
     respond_to do |format|
       if @order.save
         format.html { redirect_to root_url }
         format.json { render action: 'show', status: :created, location: @order }
       else
-        format.html { render action: 'new', notice: "Order was successfully created." }
+        format.html { render action: 'new' }
         format.json { render json: @order.errors, status: :unprocessable_entity }
       end
     end
