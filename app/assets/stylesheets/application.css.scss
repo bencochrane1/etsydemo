@@ -50,7 +50,19 @@ body {
     }
 }
 
+.jumbotron {
+    color: lightgrey;
+    background-image: url('background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: right;
+    h1, p {
+        font-family: guardian-egyptt, georgia, serif; 
+    }
 
+}
 
 
 
