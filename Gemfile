@@ -9,6 +9,8 @@ gem 'figaro'
 gem 'devise'
 gem 'stripe'
 gem 'jquery-turbolinks'
+gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate-bootstrap'
 
 gem 'rails', '4.1.7'
 gem 'bootstrap-sass', '~> 3.3.1'
