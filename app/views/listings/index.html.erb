@@ -13,7 +13,7 @@
             <h3><%= listing.name %></h3>
               <p><%= number_to_currency(listing.price) %></p>
               <p><%= "#{listing.category.name} Category" %></p>
-              <p><%= "Sold by #{listing.user.name}" %></p>
+              <p><%= "Sold by #{listing.user.first_name} #{listing.user.last_name}" %></p>
           </div>
       </div>  
     </div>

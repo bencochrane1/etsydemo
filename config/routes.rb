@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :orders
 
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations' }
   resources :listings do
     resources :orders, only: [:new, :create]
   end
