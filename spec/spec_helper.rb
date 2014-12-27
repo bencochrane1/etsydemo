@@ -20,7 +20,6 @@ RSpec.configure do |config|
   # config.mock_with :mocha
   # config.mock_with :flexmock
   # config.mock_with :rr
-
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
@@ -42,14 +41,3 @@ RSpec.configure do |config|
 end
 
 
-describe Listing do
-    it "is valid with a product name" do
-        listing = Listing.new(name: "Bookshelf")
-        expect(listing).to be_valid
-    end
-
-    it "is valid with a product category selected"
-    it "is valid with a product description"
-    it "is valid with a numeric price"
-    it "is valid with a valid image type"
-end
